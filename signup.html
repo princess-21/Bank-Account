@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style/sign.css">
+    <script src="src/script.js" defer></script>
+</head>
+<body>
+    <div class="signup">
+        <form id="signupForm">
+            <h2>Sign Up</h2>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required /><br>
+
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" required /><br>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" required /><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required /><br>
+
+            <button type="submit">Sign Up</button>
+            <a href="login.html" id="login-link">Already have an account? Log In</a>
+            <p id="error-message" style="color:red;"></p>
+        </form>    
+    </div>
+
+    <!-- Signup Notification -->
+    <div id="signupNotification" class="notification hidden">
+        <p>Signup successful! Redirecting to login...</p>
+    </div>
+</body>
+</html>

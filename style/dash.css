@@ -1,0 +1,143 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #d6efd8;
+  height: 100vh;
+}
+
+.total {
+  background-color: #1a5319;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  height: 300px;
+  width: 500px;
+  padding: 10px;
+  border-radius: 25px;
+  box-shadow: 10px 10px 5px 10px #80af81;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.tab {
+  display: flex;
+  justify-content: space-between;
+  background-color: #508d4e;
+  color: white;
+  padding: 10px;
+  list-style-type: none;
+  list
+}
+
+.user-info {
+  color: #1a5319;
+  text-align: center;
+}
+
+.bank-ui {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse; /* Position the card to the right */
+  align-items: center;
+  margin: 20px;
+}
+
+.deposit, .withdraw {
+  background: rgba(128, 175, 129, 0.5); /* Green color with 50% transparency */
+  padding: 20px;
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+  color: black;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.deposit label, .withdraw label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.deposit input, .withdraw input {
+  background-color: rgba(255, 255, 255, 0.2); /* Input background with transparency */
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #1a5319;
+  width: 100%;
+  color: black; /* Ensure text is visible against the transparent background */
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.deposit button, .withdraw button {
+  background: #1a5319;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.deposit button:hover, .withdraw button:hover {
+  background: #144015;
+}
+
+.box {
+  background: #508d4e;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.popup {
+  background: #80af81;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.popup h3 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.popup button {
+  background: #1a5319;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background: #144015;
+}
+
+.img_cancel {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+}
+
+ 

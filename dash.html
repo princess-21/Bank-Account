@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/dash.css" />
+    <script src="src/script.js" defer></script>
+
+    <title>Bank Account</title>
+</head>
+<body>
+   
+    <div class="tab">
+        <div>
+            <li>Home</li>
+        </div>
+        <li>Balance</li>
+        <li>Notification</li>
+        <a href="login.html" class="a"> Logout  </a>
+    
+    </div>
+
+     
+    <div class="user-info">
+        <h2>Welcome, <span id="username-display"></span></h2>
+    </div> 
+    <div class="bank-ui">
+        
+        <div class="card total">
+            <h2>Your Balance</h2>
+            <p>₦<span id="balanceAmount">1500</span></p>
+        </div>
+
+        
+        <div class="form-container">
+           
+            <div class="form-block deposit">
+                <form id="dForm">
+                    <h3>Deposit Amount</h3>
+                    <input type="number" id="dInput" placeholder="Enter amount" />
+                    <button type="submit">Deposit</button>
+                </form>
+            </div>
+ 
+            <!-- Withdraw Form -->
+            <div class="form-block withdraw">
+                <form id="wForm">
+                    <h3>Withdraw Amount</h3>
+                    <input type="number" id="wInput" placeholder="Enter amount" />
+                    <button type="submit">Withdraw</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="box">
+        <h3 class="history-title">Transaction History</h3>
+        <ul id="transaction-history">
+            
+        </ul>
+    </div>
+
+     
+    <div class="popup" id="popup" style="display: none;">
+        <img src="/img/multiply.png" alt="close" class="img_cancel" />
+        <h3>Insufficient Funds</h3>
+        <button id="close-popup">Cancel</button>
+    </div>
+</body>
+</html>

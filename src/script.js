@@ -129,9 +129,9 @@ if (document.getElementById('username-display')) {
         });
     };
 
-    // function updateDisplay(balance) {
-    //     document.getElementById("balanceAmount").textContent = balance;
-    // }
+    function updateDisplay(balance) {
+        document.getElementById("balanceAmount").textContent = balance;
+    }
  
     const bankAcc = new BankAcc(user);
 
